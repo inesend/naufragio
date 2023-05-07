@@ -19,27 +19,44 @@
 
 
 
-.flex-container-top {
+
+
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  }
+  
+ 
+  .flex-container-top {
     display: flex;
     color: white;
     height: 100vh;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Change the flex-direction to column */
+    align-items: center; /* Center the items horizontally */
   }
- 
+  
   .flex-item2 {
-    margin-top: 250PX;
+    margin-top: 250px;
     text-align: center;
     font-size: 5vw;
     font-family: "GROTESKLIGHT";
     width: 50vw;
   }
-
-  .flex-item3 {
-    margin-top: 50PX;
+  
+  .blinking-paragraph {
+    animation: blink 2s infinite;
+    margin-top: 50px;
     text-align: center;
     font-size: 2vw;
     font-family: "GROTESKLIGHT";
     width: 50vw;
   }
+  
 
+ 
