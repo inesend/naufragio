@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: GROTESKLIGHT;
+    src: url(FoundersGrotesk-Light.otf);
+  }
 
 .video { 
     width: 100vw;
@@ -24,3 +27,19 @@
     justify-content: center;
   }
  
+  .flex-item2 {
+    margin-top: 250PX;
+    text-align: center;
+    font-size: 3vw;
+    font-family: "GROTESKLIGHT";
+    width: 50vw;
+  }
+
+  .flex-item3 {
+    margin-top: 50PX;
+    text-align: center;
+    font-size: 2vw;
+    font-family: "GROTESKLIGHT";
+    width: 50vw;
+  }
+
