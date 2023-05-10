@@ -9,6 +9,12 @@
     text-align: center;
     font-size: 17px;
   }
+
+  .header {
+ 
+    margin-top: 150px;
+
+  }
   
   .container {
     max-width: 800px;
@@ -57,6 +63,8 @@
     margin-top: 40px;
     font-family: "GROTESKLIGHT";
     font-size: 10px;
+    display: flex;
+    flex-direction: column;
   }
   
   .footer-content {
@@ -64,12 +72,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    flex-direction: column;
     
   }
   
   .footer-logo {
     width: 200px;
-    margin-right: 40px;
+   
+    margin-bottom: 10px;
   }
 
   #leer-mas-btn {
@@ -91,3 +101,15 @@
     padding: 0 25%;
   }
   
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 10%;
+    }
+    .header {
+      margin-top: 50px;
+    }
+
+    
+  }
