@@ -73,35 +73,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    
   }
   
   .footer-logo {
     width: 200px;
     height: auto;
-    margin-right: 10px;
-    margin-left: 10px;
   }
   
-  .footer-text {
-    margin-left: 5px;
-  }
+  
   
   @media (max-width: 600px) {
     .footer-content {
       flex-direction: column;
-      margin-right: 0;
       margin-bottom: 10px;
     }
   
     .footer-logo {
-      margin-right: 0;
       margin-bottom: 10px;
+      width: 130px;
     }
   
-    .footer-text {
-      margin-right: 0;
-    }
+    
   }
   
  
