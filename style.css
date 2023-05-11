@@ -1,123 +1,123 @@
 @font-face {
-    font-family: GROTESKLIGHT;
-    src: url(FoundersGrotesk-Light.otf);
+  font-family: GROTESKLIGHT;
+  src: url(FoundersGrotesk-Light.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.flex-container-top {
+  display: flex;
+  color: white;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-item2 {
+  margin-top: 250px;
+  font-size: 5vw;
+  font-family: "GROTESKLIGHT";
+  width: 50vw;
+}
+
+.blinking-paragraph {
+  animation: blink 1s infinite;
+  margin-top: 50px;
+  font-size: 2vw;
+  font-family: "GROTESKLIGHT";
+  width: 50vw;
+  opacity: 0;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
   }
+}
+
+#index-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+  font-family: "GROTESKLIGHT";
+  font-size: 10px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .hero {
-    position: relative;
-    height: 100vh;
-  }
-  
-  .flex-container-top {
-    display: flex;
-    color: white;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .flex-item2 {
-    margin-top: 250px;
-    font-size: 5vw;
-    font-family: "GROTESKLIGHT";
-    width: 50vw;
-  }
-  
-  .blinking-paragraph {
-    animation: blink 1s infinite;
-    margin-top: 50px;
-    font-size: 2vw;
-    font-family: "GROTESKLIGHT";
-    width: 50vw;
-    opacity: 0;
-  }
-  
-  @keyframes blink {
-    50% {
-      opacity: 1;
-    }
-  }
-  
-  #index-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    z-index: 2;
-    font-family: "GROTESKLIGHT";
-    font-size: 10px;
-  }
-  
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+
+
+@media (max-width: 600px) {
   .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    flex-direction: column;
+    margin-bottom: 10px;
   }
-  
+
   .footer-logo {
-    width: 200px;
-    height: auto;
+    margin-bottom: 10px;
+    width: 70px;
   }
+
   
-  
-  
-  @media (max-width: 600px) {
-    .footer-content {
-      flex-direction: column;
-      margin-bottom: 10px;
-    }
-  
-    .footer-logo {
-      margin-bottom: 10px;
-      width: 130px;
-    }
-  
-    
-  }
-  
- 
-  
-  .button {
-    font-family: "GROTESKLIGHT";
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    background-color: transparent;
-    border: none;
-    padding: 5px 5px;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 50px;
-  }
-  
-  .button:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .project-image {
-    float: left;
-    margin-right: 20px;
-    height: 640px; /* Adjust the height to maintain the 9:16 ratio */
-  }
+}
+
+
+
+.button {
+  font-family: "GROTESKLIGHT";
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  padding: 5px 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.project-image {
+  float: left;
+  margin-right: 20px;
+  height: 640px; /* Adjust the height to maintain the 9:16 ratio */
+}
