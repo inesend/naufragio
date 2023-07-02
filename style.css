@@ -93,6 +93,12 @@ body {
     margin-bottom: 10px;
     width: 70px;
   }
+  .botones {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   
 }
