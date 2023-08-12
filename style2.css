@@ -119,3 +119,40 @@ footer {
 
   
 }
+
+.slick-dots {
+  position: absolute;
+  bottom: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+  background: #fff;
+}
+
+@media (max-width: 600px) {
+  .slick-dots {
+      bottom: 10px; /* Adjust the bottom value for mobile view */
+  }
+}
